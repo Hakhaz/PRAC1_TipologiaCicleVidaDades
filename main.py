@@ -12,9 +12,9 @@ def trade_spider(max_pages):
         for link in soup.findAll('a', {'class': 'cover'}):
             href = link.get('href')
             title = link.string
-        print(href)
-        print(title)
-        #get_single_item_data(href)
+            print(href)
+            print(title)
+            #get_single_item_data(href)
         page+=1
 
 def get_single_item_data(item_url):
