@@ -1,0 +1,12 @@
+He pensat crear aquest document per anar afegint comentaris que veiem que poden ser interessants per a que l'altre pugui continuar investigant.
+
+22/03/2019 - Carlos
+      Line 24
+      En aquest bucle recupero el títol. Enlloc de buscar-lo per l'etiqueta <h1>, mirant el codi es podría buscar per l'etiqueta <div> i    class="title", i recuperar el valor del fill, que sería el tag <h1>
+      Hi hauria una forma de recuperar el títol sense fer servir un bucle? No he aconseguit recuperar el valor sense un bucle, anant al tag <div> i class= 'title'. Podría ser una millor forma de recuperar el valor, i potser més aconsellable que no anar al tag <h1>0
+
+      Line 26
+      En aquest bucle vaig a l'estructura de preus, per recuperar els preus i el descompte. Igual que en el cas anterior, sería necessari un bucle for? Si no es repeteix l'etiqueta no sería necessari, però no ho he aconseguit.
+
+      Line 35-36
+      Executant els dos enllaços d'aquestes dues línies, pel primer enllaç 
