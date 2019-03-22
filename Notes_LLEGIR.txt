@@ -9,4 +9,4 @@ He pensat crear aquest document per anar afegint comentaris que veiem que poden 
       En aquest bucle vaig a l'estructura de preus, per recuperar els preus i el descompte. Igual que en el cas anterior, sería necessari un bucle for? Si no es repeteix l'etiqueta no sería necessari, però no ho he aconseguit.
 
       Line 35-36
-      Executant els dos enllaços d'aquestes dues línies, pel primer enllaç 
+      Executant els dos enllaços d'aquestes dues línies, pel primer enllaç
