@@ -55,3 +55,11 @@ He pensat crear aquest document per anar afegint comentaris que veiem que poden 
 	Afegeixo l'arxiu que he generat. No hi ha molts resultats ja que hem donaba un error amb un joc, y nomès ha escrit 3 jocs. He de continuar mirant aquest error que hem dona. Es un error de UnicodeEncodeError. Hem genera també una línea buida entre cada joc, he de mirar perquè. Ja hem dius què opines sobre la manera d'anar guardant a l'arxiu. He probat tambè d'anar guardant els resultats a una llista de llistes, y desprès al final guardar tota la llista a l'arxiu, però m'ho guardaba tot a diferents columnes, no files. Hem falta afegir tambè la capçalera a l'arxiu, que crec que ja sé com fer-ho.
 	
 	Qualsevol suggerencia me dius, o hem truques i ho anem parlant.
+	
+	
+23/03/2019 - Oscar
+
+He modificat la get_single_item_data pq retorni un vector i concatenar-ho amb la categoria.
+Els vectors retornats per cada pàgina es guarden en un dataframe, la manera que he trobat no és la més elegant, així que si creus que hi ha manera millors endavant. Al final es pasa el dataframe sencer a csv.
+Falta posar els noms de les variables en el dataframe.
+T'adjunto el data.csv generat.
