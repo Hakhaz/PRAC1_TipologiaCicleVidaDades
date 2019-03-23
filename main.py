@@ -14,6 +14,8 @@ def trade_spider(max_pages):
             #title = link.string
             print(href)
             #print(title)
+            category = link.parent.get('data-dlc') #0 = jocs, 1 = dlc
+            print('category: {}'.format(category))
             get_single_item_data(href)
         page+=1
 
@@ -38,8 +40,11 @@ def get_single_item_data(item_url):
         print(discount.string)
         
        
-    release = soup.find('div', {'class':'release'}).span
-    print(release.string)
+    release_date = soup.find('div', {'class':'release'})
+    print(release_date.string)
+    
+    users_rating = soup.find('div', {'class':'productreviews'}).contents[1].span.get_text()
+    print(users_rating)
         
     #for item_name in soup.findAll('div', {'class':'stars'}):        
     #    print(item_name)
