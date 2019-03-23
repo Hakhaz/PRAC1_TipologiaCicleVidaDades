@@ -37,3 +37,7 @@ He pensat crear aquest document per anar afegint comentaris que veiem que poden 
     print(discount.string)
 	
 	els adjunts (DLCs) ja sortiran quan s'accedeixi a la seva pàgina.
+	
+23/03/2019 - Oscar
+	afegit category i users_rating
+	
