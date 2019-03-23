@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import csv
 
 def trade_spider(max_pages):
     page=1
@@ -24,32 +25,52 @@ def get_single_item_data(item_url):
     plain_text = source_code.text
     soup = BeautifulSoup(plain_text)
     
-    title = soup.find('div',{'class':'title'}).h1
-    print(title.string)
-    platform = soup.find('div',{'class':'subinfos'}).a.get('class')
+    title = soup.find('div',{'class':'title'}).h1.get_text()
+    print(title)
+    #platform = soup.find('div',{'class':'subinfos'}).a.get('class')
+    platform = soup.find('div',{'class':'subinfos'}).a.get_text()
     print(platform)
     
     #alternativa sense bucle, ja es buscaran els DLCs quan els hi toqui
-    #item_prices = soup.find('div', {'class':'prices'})      
-    for item_prices in soup.findAll('div', {'class':'prices'}):
-        retail = item_prices.find('span')
-        price = item_prices.find('div',{'class':'price'})
-        discount = item_prices.find('div',{'class':'discount'})
-        print(retail.string)
-        print(price.string)
-        print(discount.string)
-        
+    item_prices = soup.find('div', {'class':'prices'})      
+    #for item_prices in soup.findAll('div', {'class':'prices'}):
+    try:
+        retail = item_prices.find('span').string
+    except:
+        retail = ''
+    price = item_prices.find('div',{'class':'price'}).string
+    
+    try:
+        discount = item_prices.find('div',{'class':'discount'}).string
+    except:
+        discount = ''
+    print(retail)
+    print(price)
+    print(discount)
+       
        
     release_date = soup.find('div', {'class':'release'})
     print(release_date.string)
     
     users_rating = soup.find('div', {'class':'productreviews'}).contents[1].span.get_text()
     print(users_rating)
-        
+    
+    data = [title, platform]
+    writer.writerow(data)
+    
     #for item_name in soup.findAll('div', {'class':'stars'}):        
     #    print(item_name)
 
-
-#trade_spider(1)
+#Exemple per a probar l'escriptura al csv de la primera pàgina
+with open('data.csv', 'w') as csvFile:
+    writer = csv.writer(csvFile, delimiter=',')
+    trade_spider(1)
 #get_single_item_data('https://www.instant-gaming.com/es/2467-comprar-key-uplay-the-division-2/')
-get_single_item_data('https://www.instant-gaming.com/es/186-comprar-key-rockstar-grand-theft-auto-v/')
+#get_single_item_data('https://www.instant-gaming.com/es/186-comprar-key-rockstar-grand-theft-auto-v/')
+
+#Exemple per a probar l'escriptura al csv de únicament tres jocs
+with open('data.csv', 'w') as csvFile:
+    writer = csv.writer(csvFile, delimiter=',')
+    get_single_item_data('https://www.instant-gaming.com/es/2467-comprar-key-uplay-the-division-2/')
+    get_single_item_data('https://www.instant-gaming.com/es/186-comprar-key-rockstar-grand-theft-auto-v/')
+    get_single_item_data('https://www.instant-gaming.com/es/3979-comprar-key-origin-apex-legends-2150-apex-coins/')
