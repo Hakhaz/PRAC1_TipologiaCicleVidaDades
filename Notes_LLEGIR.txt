@@ -81,4 +81,5 @@ El diumenge o dilluns el tornarè a repassar per intentar millorar alguns punts.
 Sobre el dataset està genial, pero crec que hauriem de treure les unitats (€, percentatge etc) i posar el mateix format de dates.
 Qualsevol cosa hem dius.
 
-
+30/03/2019 - Carlos
+He afegit dos arxius .py. L'arxiu main.py simplement fa la trucada a les funcions de l'arxiu scraper.py. He afegit en una funció apart (df_to_csv()) la creació de l'arxiu csv. Ara miro de treure les unitats i percentatges, i de deixar el mateix format de dates. He afegit també la extracció de les dades d'avui.
