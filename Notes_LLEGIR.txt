@@ -88,4 +88,5 @@ He creat una funció a scraper.py, on creo un diccionari amb els mesos, per a co
 He el·liminat les unitats (€ i %), i ho he afegit a la capçalera, per a que es sàpigui en quines unitats estàn els camps.
 Al descompte, he tret tambè el signe negatiu, ja que crec que, al indicar que la col·lumna es descompte, ja es suposa que s'haurà de restar.
 Adjunto el nou arxiu generat.
+Demà li dono una ullada al document teòric de la pràctica.
 Qualsevol cosa hem dius.
