@@ -7,5 +7,5 @@ import pandas as pd
 max_pages = get_max_pages()
 df = pd.DataFrame()
 
-df = trade_spider(1)
+df = trade_spider(max_pages)
 df_to_csv(df)
