@@ -49,7 +49,7 @@ def trade_spider(max_pages):
             data.append(category)
             
             now = datetime.datetime.now()
-            dateExtraction = now.strftime("%Y-%m-%d")
+            dateExtraction = now.strftime("%d %B %Y")
             data.append(dateExtraction)
 
 
@@ -60,7 +60,7 @@ def trade_spider(max_pages):
     return (df)
 
 def df_to_csv(df):
-    columns = ['name','platform','original_price','discounted_price','discount','release_data','users_rating','category','extraction_date']   
+    columns = ['name','platform','original_price(€)','discounted_price(€)','discount(%)','release_date','users_rating','category','extraction_date']   
     now = datetime.datetime.now()
     fileName = 'GamesDataPrices_'+now.strftime("%Y%m%d_%H%M")+'.csv'
     print('File "' + fileName + '" generated.')
@@ -78,12 +78,16 @@ def get_single_item_data(item_url):
     item_prices = soup.find('div', {'class':'prices'})      
     try:
         retail = item_prices.find('span').string
+        retail = retail[:-1]
     except:
         retail = ''
+    
     price = item_prices.find('div',{'class':'price'}).string
+    price = price[:-1]
     
     try:
         discount = item_prices.find('div',{'class':'discount'}).string
+        discount = discount[1:-1]
     except:
         discount = ''
      
