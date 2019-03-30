@@ -82,4 +82,10 @@ Sobre el dataset està genial, pero crec que hauriem de treure les unitats (€,
 Qualsevol cosa hem dius.
 
 30/03/2019 - Carlos
-He afegit dos arxius .py. L'arxiu main.py simplement fa la trucada a les funcions de l'arxiu scraper.py. He afegit en una funció apart (df_to_csv()) la creació de l'arxiu csv. Ara miro de treure les unitats i percentatges, i de deixar el mateix format de dates. He afegit també la extracció de les dades d'avui.
+He afegit dos arxius .py. L'arxiu main.py simplement fa la trucada a les funcions de l'arxiu scraper.py.
+He afegit en una funció apart (df_to_csv()) la creació de l'arxiu csv.
+He creat una funció a scraper.py, on creo un diccionari amb els mesos, per a convertir el mes actual a castellà, i mantenir el mateix format de dates.
+He el·liminat les unitats (€ i %), i ho he afegit a la capçalera, per a que es sàpigui en quines unitats estàn els camps.
+Al descompte, he tret tambè el signe negatiu, ja que crec que, al indicar que la col·lumna es descompte, ja es suposa que s'haurà de restar.
+Adjunto el nou arxiu generat.
+Qualsevol cosa hem dius.
