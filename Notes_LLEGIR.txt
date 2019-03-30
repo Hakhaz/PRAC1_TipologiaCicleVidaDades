@@ -72,3 +72,13 @@ He esborrat tots els print que hi havia al codi i no eren necessaris, i he afegi
 He modificat el nom del fitxer que es genera per a que es mostri la data i l'hora de l'extracció.
 Adjunto el nou fitxer amb les dades de les 17 pàgines.
 Qualsevol cosa me dius. Demà revisaré el codi per veure que no falti res.
+
+
+30/03/2019 - Oscar
+
+Acabo de pujar el primer esborrany de la part teòrica de la pràctica.
+El diumenge o dilluns el tornarè a repassar per intentar millorar alguns punts. Si fas algun canvi, marca-ho amb un altre color.
+Sobre el dataset està genial, pero crec que hauriem de treure les unitats (€, percentatge etc) i posar el mateix format de dates.
+Qualsevol cosa hem dius.
+
+
