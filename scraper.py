@@ -20,7 +20,22 @@ def get_max_pages():
             pageMax = page
     return(pageMax)
 
-
+def switch_month(month):
+    switcherMonth = {
+        "January": "enero",
+        "February": "febrero",
+        "March":"marzo",
+        "April":"abril",
+        "May":"mayo",
+        "June":"junio",
+        "July":"julio",
+        "August":"agosto",
+        "September":"septiembre",
+        "October":"octubre",
+        "November":"noviembre",
+        "December":"diciembre"
+    }
+    return(switcherMonth.get(month, "None"))
 
 def trade_spider(max_pages):
     print('Start scraper. Total pages:',max_pages)
@@ -49,7 +64,10 @@ def trade_spider(max_pages):
             data.append(category)
             
             now = datetime.datetime.now()
-            dateExtraction = now.strftime("%d %B %Y")
+            day = now.strftime("%d")
+            month = switch_month(now.strftime("%B"))
+            year = now.strftime("%Y")
+            dateExtraction = day + " " + month + " " + year
             data.append(dateExtraction)
 
 
