@@ -93,6 +93,6 @@ Qualsevol cosa hem dius.
 
 31/03/2019 - Carlos
 Me llegit el document word, i la veritat que el trobo molt complert, no trobo gaire cosa que es pugui millorar. Continuaré pensant algun punt per millorar, pero ho has deixat molt complert. He afegit únicament una col·lumna més al punt 5, indicant la data d'extracció.
-Pel que fa a la llicència, a l'hora de crear un repositori nou a github, et dona l'opció de sel·leccionar una llicència. He probat a crear un nou, però la llicència escollida no està a la llista, no sabría com afegir la llicència escollida (que ja hem sembla bona elecció). Miraré si, sense crear un repositori nou, es possible modificar la llicència. Diría que hauríem de fer el repositori públic.
+Pel que fa a la llicència, buscant per internet, al final he afegit un arxiu LICENSE.txt amb la llicència que aplica. He anat a la pàgina de creative commons, he buscat la llicència que apliquem, i ja hem donen allà un text, que he aplicat a l'arxiu creat, per a indicar la llicència que aplica. Per una altra part, més endavant, hauríem de fer el repositori públic, ja que ara per ara es privat i nomès podem accedir nosaltres dos. Si volem que el professor pugui accedir haurem de fer-lo públic.
 Per una altra part, tu sabries com crear una carpeta al github? Volia afegir els diferents datasets dels diferents dies dins d'una carpeta.
 Anem parlant.
