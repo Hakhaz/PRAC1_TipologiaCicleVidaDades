@@ -94,5 +94,5 @@ Qualsevol cosa hem dius.
 31/03/2019 - Carlos
 Me llegit el document word, i la veritat que el trobo molt complert, no trobo gaire cosa que es pugui millorar. Continuaré pensant algun punt per millorar, pero ho has deixat molt complert. He afegit únicament una col·lumna més al punt 5, indicant la data d'extracció.
 Pel que fa a la llicència, buscant per internet, al final he afegit un arxiu LICENSE.txt amb la llicència que aplica. He anat a la pàgina de creative commons, he buscat la llicència que apliquem, i ja hem donen allà un text, que he aplicat a l'arxiu creat, per a indicar la llicència que aplica. Per una altra part, més endavant, hauríem de fer el repositori públic, ja que ara per ara es privat i nomès podem accedir nosaltres dos. Si volem que el professor pugui accedir haurem de fer-lo públic.
-Per una altra part, he creat una carpeta "Datasets", per anar afegint allà els diferents arxius dels diferents dies. Ara per ara hi ha el del día 30 i el del dia 31.
+Per una altra part, he creat una carpeta "Datasets", per anar afegint allà els diferents arxius dels diferents dies. Ara per ara hi ha el del día 30 i el del dia 31. També he creat diferents carpetes per ordenar els arxius.
 Anem parlant.
