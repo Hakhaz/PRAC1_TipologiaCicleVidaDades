@@ -98,3 +98,6 @@ Per una altra part, he creat una carpeta "Datasets", per anar afegint allà els 
 Trobo que estaría bé crear un arxiu README.txt, indicant qué hi ha a cada carpeta, i com executar el codi, és a dir, executar l'arxiu main.py.
 També canviaría el nom del repositori, per donar-li un nom més adequat a lo que fa el codi, per a que qualsevol el pugui trobar i utilitzar en cas que ho necessiti.
 Anem parlant.
+
+02/04/2019 - Oscar
+Adjuntat codi a la part teòrica, i algun petit retoc.
