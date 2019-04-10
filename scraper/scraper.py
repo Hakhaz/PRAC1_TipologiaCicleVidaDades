@@ -36,16 +36,17 @@ def switch_month(month):
         "December":"diciembre"
     }
     return(switcherMonth.get(month, "None"))
-
+    
 def trade_spider(max_pages):
     print('Start scraper. Total pages:',max_pages)
     page=1
+    headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'}
     df = pd.DataFrame()
     while page <= max_pages:
         url = 'https://www.instant-gaming.com/es/busquedas/?q=&page=' + str(page)
         print('Start scraper page',page)
 
-        source_code = requests.get(url)
+        source_code = requests.get(url,headers=headers)
         plain_text = source_code.text
         soup = BeautifulSoup(plain_text,'lxml')
         for link in soup.findAll('a', {'class': 'cover'}):
@@ -86,7 +87,8 @@ def df_to_csv(df):
     
     
 def get_single_item_data(item_url):
-    source_code = requests.get(item_url)
+    headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.103 Safari/537.36'}
+    source_code = requests.get(item_url, headers=headers)
     plain_text = source_code.text
     soup = BeautifulSoup(plain_text,'lxml')
     
@@ -115,6 +117,4 @@ def get_single_item_data(item_url):
 
     data = [title,platform,retail,price,discount,release_date,users_rating]
     return (data)
-
-
 
