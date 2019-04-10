@@ -1,5 +1,5 @@
-Autor: Carlos  Pérez Martín
-Autor: Òscar Fernández Castro
+Autor: Carlos  Pérez Martín . Usuari GitHub: Hakhaz
+Autor: Òscar Fernández Castro. Usuari GitHub: vodskar2
 
 - Datasets: Carpeta que conté els datasets generats.
 - License: Llicencia del projecte.
